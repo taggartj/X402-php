@@ -1,0 +1,10 @@
+x402_paywall.weather:
+  path: '/api/weather'
+  defaults:
+    _controller: '\Drupal\x402_paywall\Controller\WeatherController::build'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+  options:
+    # Never serve this from the page cache; payment is per request.
+    no_cache: TRUE

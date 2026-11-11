@@ -1,0 +1,8 @@
+services:
+  x402_paywall.facilitator:
+    class: Drupal\x402_paywall\X402Facilitator
+    arguments: ['@http_client', '@config.factory', '@logger.channel.x402_paywall']
+
+  logger.channel.x402_paywall:
+    parent: logger.channel_base
+    arguments: ['x402_paywall']

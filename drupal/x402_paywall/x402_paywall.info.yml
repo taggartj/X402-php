@@ -1,0 +1,5 @@
+name: 'x402 Paywall'
+type: module
+description: 'Charge for a route using the x402 payment protocol (HTTP 402).'
+package: Custom
+core_version_requirement: ^11

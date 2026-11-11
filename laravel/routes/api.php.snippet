@@ -1,0 +1,16 @@
+<?php
+
+// Add to routes/api.php
+use App\Http\Controllers\WeatherController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/weather', WeatherController::class);
+
+// .env
+// X402_PAY_TO=0xYourWalletAddressHere
+// X402_NETWORK=eip155:84532
+// X402_FACILITATOR_URL=https://x402.org/facilitator
+//
+// CORS: if browser clients call this, expose the PAYMENT-REQUIRED and
+// PAYMENT-RESPONSE headers in config/cors.php ('exposed_headers') and
+// allow PAYMENT-SIGNATURE in 'allowed_headers'.
